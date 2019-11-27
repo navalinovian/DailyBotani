@@ -23,7 +23,7 @@ public class EncyclopediaFragment extends Fragment {
         encyclopediaViewModel =
                 ViewModelProviders.of(this).get(EncyclopediaViewModel.class);
         View root = inflater.inflate(R.layout.fragment_encyclopedia, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
+        final TextView textView = root.findViewById(R.id.text_encyclopedia);
         encyclopediaViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

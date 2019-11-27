@@ -10,7 +10,7 @@ public class EncyclopediaViewModel extends ViewModel {
 
     public EncyclopediaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is Encyclopedia fragment");
     }
 
     public LiveData<String> getText() {
