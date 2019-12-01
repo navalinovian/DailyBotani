@@ -17,16 +17,16 @@
           android:layout_height="match_parent"
           >
 
-          <ImageView
-              android:id="@+id/back"
-              android:layout_width="30dp"
-              android:layout_height="30dp"
-              android:src="@drawable/back"
-              app:layout_constraintTop_toTopOf="parent"
-              android:layout_marginTop="10dp"
-              app:layout_constraintLeft_toLeftOf="parent"
-              android:layout_marginLeft="20dp"
-              tools:ignore="MissingConstraints" />
+<!--          <ImageView-->
+<!--              android:id="@+id/back"-->
+<!--              android:layout_width="30dp"-->
+<!--              android:layout_height="30dp"-->
+<!--              android:src="@drawable/back"-->
+<!--              app:layout_constraintTop_toTopOf="parent"-->
+<!--              android:layout_marginTop="10dp"-->
+<!--              app:layout_constraintLeft_toLeftOf="parent"-->
+<!--              android:layout_marginLeft="20dp"-->
+<!--              tools:ignore="MissingConstraints" />-->
 
           <TextView
               android:layout_width="wrap_content"
@@ -35,9 +35,7 @@
               android:text="Kategori Tanaman"
               android:textColor="@color/tulisan"
               android:textSize="25dp"
-              tools:ignore="MissingConstraints"
-              app:layout_constraintLeft_toRightOf="@+id/back"
-              app:layout_constraintTop_toTopOf="parent"
+              tools:ignore="MissingConstraints"              app:layout_constraintTop_toTopOf="parent"
               android:layout_marginTop="3dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="70dp"
@@ -181,16 +179,7 @@
               tools:ignore="MissingConstraints"
               android:id="@+id/tanaman_hias_akar"/>
 
-
-
-
-
-
       </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
