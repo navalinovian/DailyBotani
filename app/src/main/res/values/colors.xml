@@ -3,5 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="hijauMenu">#1D767B</color>
+    <color name="hijauNavigasi">#1D767B</color>
+    <color name="backgroundApp">#062827</color>
+    <color name="tulisan">#FAD3C7</color>
+
+
 </resources>
