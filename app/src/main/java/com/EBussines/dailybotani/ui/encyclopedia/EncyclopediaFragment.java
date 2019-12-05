@@ -57,6 +57,62 @@ public class EncyclopediaFragment extends Fragment {
 
             }
         });
+
+        ImageView button2 = (ImageView) view.findViewById(R.id.akar_kategori);
+        button2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanAkarActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button3 = (ImageView) view.findViewById(R.id.daun_kategori);
+        button3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanDaunActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button4 = (ImageView) view.findViewById(R.id.batang_kategori);
+        button4.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanBatangActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button5 = (ImageView) view.findViewById(R.id.buah_kategori);
+        button5.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanBuahActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+
+
         return view;
 
     }

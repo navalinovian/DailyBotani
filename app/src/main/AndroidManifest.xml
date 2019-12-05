@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.encyclopedia.LihatTanamanBungaActivity"></activity>
+        <activity android:name=".ui.encyclopedia.LihatTanamanBatangActivity"></activity>
+        <activity android:name=".ui.encyclopedia.LihatTanamanAkarActivity" />
+        <activity android:name=".ui.encyclopedia.LihatTanamanBuahActivity" />
+        <activity android:name=".ui.encyclopedia.LihatTanamanDaunActivity" />
+        <activity android:name=".ui.encyclopedia.LihatTanamanBungaActivity" />
         <activity android:name=".Activity.MenuActivity" />
         <activity
             android:name=".MainActivity"
