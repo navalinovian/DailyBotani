@@ -16,20 +16,30 @@ import com.EBussines.dailybotani.R;
 
 public class EncyclopediaFragment extends Fragment {
 
-    private EncyclopediaViewModel encyclopediaViewModel;
+//    private EncyclopediaViewModel encyclopediaViewModel;
+//
+//    public View onCreateView(@NonNull LayoutInflater inflater,
+//                             ViewGroup container, Bundle savedInstanceState) {
+//        encyclopediaViewModel =
+//                ViewModelProviders.of(this).get(EncyclopediaViewModel.class);
+//        View root = inflater.inflate(R.layout.fragment_encyclopedia, container, false);
+//        final TextView textView = root.findViewById(R.id.text_encyclopedia);
+//        encyclopediaViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
+//        return root;
+//    }
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        encyclopediaViewModel =
-                ViewModelProviders.of(this).get(EncyclopediaViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_encyclopedia, container, false);
-        final TextView textView = root.findViewById(R.id.text_encyclopedia);
-        encyclopediaViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+
+    public EncyclopediaFragment(){
+
+    }
+
+    @Nullable
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_encyclopedia, container, false);
     }
 }
