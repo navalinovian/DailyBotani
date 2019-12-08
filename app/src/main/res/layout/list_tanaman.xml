@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundApp"
+    >
+
+    <TextView
+        android:id="@+id/list_tanaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/carter_one"
+        android:text="List Tanaman"
+        android:textColor="@color/tulisan"
+        android:textSize="25dp" />
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="120px"
+        android:onClick="nambah"/>
+
+
+</LinearLayout>

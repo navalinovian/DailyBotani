@@ -25,7 +25,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.home.HomeFragment" />
+        <activity
+            android:name=".Data.ViewData"
+            android:label="DailyBotani">
 
+        </activity>
+        <activity
+            android:name=".Data.CreateData"
+            android:label="DailyBotani"
+            >
+        </activity>
+        <activity
+            android:name=".Data.EditTanaman"
+            android:label="DailyBotani"
+            >
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

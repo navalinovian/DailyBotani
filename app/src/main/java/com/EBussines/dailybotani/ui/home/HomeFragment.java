@@ -35,11 +35,14 @@ package com.EBussines.dailybotani.ui.home;
 //}
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -48,16 +51,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.EBussines.dailybotani.Data.CreateData;
+import com.EBussines.dailybotani.Data.ViewData;
 import com.EBussines.dailybotani.R;
+import com.EBussines.dailybotani.ui.encyclopedia.LihatTanamanBungaActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
-    RecyclerView rvGambarText;
-
-    List<HomeViewModel> homeViewModelList = new ArrayList<>();
-
 
     public HomeFragment(){
 
@@ -65,38 +67,24 @@ public class HomeFragment extends Fragment {
 
     @Nullable
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
 
+
+        View view = inflater.inflate(R.layout.fragment_home,
+                container, false);
+        Button button = (Button) view.findViewById(R.id.kelist);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), ViewData.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        return view;
 
     }
-//
-//
-//    @Override
-//    protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.fragment_home);
-//
-//        // menyambungkan rvGambarText ke layout
-//        rvGambarText = findViewById(R.id.rvSuperHero);
-//
-//        // membuat object gambarText
-//        HomeViewModel homeViewModel = new HomeViewModel("satu", R.drawable.bunga);
-//
-//        // menambahkan gambarText ke listGambarText
-//        homeViewModelList.add(homeViewModel);
-//
-//        // membuat object gambarText
-//        homeViewModel = new HomeViewModel("dua", R.drawable.akar);
-//
-//        // menambahkan gambarText ke listGambarText
-//        homeViewModelList.add(homeViewModel);
-//
-//        // instansiasi Adapter
-//        HomeViewModelAdapter homeViewModelAdapter = new HomeViewModelAdapter(homeViewModelList);
-//
-//        // set adapter dan layoutmanager
-//        rvGambarText.setAdapter(homeViewModelAdapter);
-//        rvGambarText.setLayoutManager(new LinearLayoutManager(this));
-//
-//    }
 }
