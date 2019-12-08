@@ -78,7 +78,7 @@
               android:layout_marginTop="95dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="30dp"
-              tools:ignore="MissingConstraints" />
+              android:onClick="TanamanDaun"/>
 
           <TextView
               android:layout_width="wrap_content"
@@ -103,7 +103,8 @@
               android:layout_marginTop="195dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="30dp"
-              tools:ignore="MissingConstraints" />
+              tools:ignore="MissingConstraints"
+              android:onClick="TanamanBunga"/>
 
           <TextView
               android:layout_width="wrap_content"
@@ -128,7 +129,8 @@
               android:layout_marginTop="295dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="30dp"
-              tools:ignore="MissingConstraints" />
+              tools:ignore="MissingConstraints"
+              android:onClick="TanamanBuah"/>
 
           <TextView
               android:layout_width="wrap_content"
@@ -153,7 +155,8 @@
               android:layout_marginTop="395dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="30dp"
-              tools:ignore="MissingConstraints" />
+              tools:ignore="MissingConstraints"
+              android:onClick="TanamanBatang"/>
 
           <TextView
               android:layout_width="wrap_content"
@@ -178,7 +181,8 @@
               android:layout_marginTop="495dp"
               app:layout_constraintLeft_toLeftOf="parent"
               android:layout_marginLeft="30dp"
-              tools:ignore="MissingConstraints" />
+              tools:ignore="MissingConstraints"
+              android:onClick="TanamanAkar"/>
 
           <TextView
               android:layout_width="wrap_content"

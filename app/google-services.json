@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "780652129569",
+    "firebase_url": "https://dailybotani.firebaseio.com",
+    "project_id": "dailybotani",
+    "storage_bucket": "dailybotani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780652129569:android:b84ca8b3f7f6078c3ea260",
+        "android_client_info": {
+          "package_name": "com.EBussines.dailybotani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780652129569-is08eaqhm1cv62mi1v2ljbs5ltmlep3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.EBussines.dailybotani",
+            "certificate_hash": "a904a6219c6eccc8fa4e10711fc11f7ef389f2d9"
+          }
+        },
+        {
+          "client_id": "780652129569-ek5gdpkonjp33joso234f0ug0dl036oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hOxplBkQP6yQMO4Vlbo5_d6OcRzzzKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780652129569-ek5gdpkonjp33joso234f0ug0dl036oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

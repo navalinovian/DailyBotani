@@ -1,16 +1,14 @@
 package com.EBussines.dailybotani.ui.encyclopedia;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.EBussines.dailybotani.R;
 
@@ -40,6 +38,90 @@ public class EncyclopediaFragment extends Fragment {
 
     @Nullable
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_encyclopedia, container, false);
+
+//        Intent intent = new Intent(getActivity(), LihatTanamanBungaActivity.class);
+//        startActivity(intent);
+//        return inflater.inflate(R.layout.fragment_encyclopedia, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_encyclopedia,
+                container, false);
+        ImageView button = (ImageView) view.findViewById(R.id.bunga_kategori);
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanBungaActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button2 = (ImageView) view.findViewById(R.id.akar_kategori);
+        button2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanAkarActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button3 = (ImageView) view.findViewById(R.id.daun_kategori);
+        button3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanDaunActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button4 = (ImageView) view.findViewById(R.id.batang_kategori);
+        button4.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanBatangActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        ImageView button5 = (ImageView) view.findViewById(R.id.buah_kategori);
+        button5.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(getActivity(), LihatTanamanBuahActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+
+
+        return view;
+
     }
+//
+//    public void TanamanBunga(View view) {
+//        Intent intent = new Intent(getActivity(), LihatTanamanBungaActivity.class);
+//        startActivity(intent);
+//    }
+
+
+
 }
