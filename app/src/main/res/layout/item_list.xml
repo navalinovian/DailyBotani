@@ -22,7 +22,7 @@
 
         android:layout_height="80dp"
 
-        android:src="@drawable/bunga"/>
+        android:src="@drawable/bunga_splashscreen"/>
 
 
 
